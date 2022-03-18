@@ -1,0 +1,251 @@
+:root {
+  --accent: linear-gradient(
+    90deg,
+    hsla(343, 75%, 41%, 1) 0%,
+    hsla(243, 75%, 41%, 1) 100%
+  );
+  --accent-light: linear-gradient(
+    90deg,
+    hsla(243, 75%, 41%, 1) 0%,
+    hsla(343, 75%, 41%, 1) 100%
+  );
+  --center-contents-bottom: linear-gradient(
+    180deg,
+    hsla(343, 75%, 41%, 1) 0%,
+    hsla(243, 75%, 41%, 1) 100%
+  );
+  --center-content-top: linear-gradient(
+    180deg,
+    hsla(243, 75%, 41%, 1) 0%,
+    hsla(343, 75%, 41%, 1) 100%
+  );
+  --pure-white: #fff;
+  --main-text: rgb(43, 23, 134);
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://images.wallpaperscraft.ru/image/single/volny_figury_gradient_206702_3840x2160.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 10px 0px;
+  text-decoration: none;
+}
+
+.section {
+  padding: 35px 0;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header {
+  margin: 0;
+  background: var(--center-content-top);
+}
+
+.header a {
+  color: var(--pure-white);
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-logo {
+  display: inline;
+  width: 20%;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+/*
+.header-logo img {
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+}*/
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.menu-link {
+  text-transform: uppercase;
+  margin: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+  padding: 25px;
+  background: var(--accent);
+}
+
+.intro {
+  padding: 50px 0;
+}
+
+.intro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-left {
+  width: 30%;
+}
+
+.intro-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.intro-right {
+  width: 60%;
+}
+
+.intro-right h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--main-text);
+}
+
+.intro-right h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--main-text);
+}
+
+.intro-right p {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(27, 27, 114);
+}
+
+.contacts {
+  margin-bottom: 60px;
+  color: var(--main-text);
+}
+
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts li {
+  text-align: center;
+}
+
+.skills {
+  color: var(--pure-white);
+  background: var(--accent-light);
+}
+
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  list-style: none;
+}
+
+.skills li {
+  min-width: 50px;
+  border: 4px solid;
+  padding: 10px 15px;
+  border-image: var(--accent);
+  border-image-slice: 1;
+  text-align: center;
+}
+
+.code-example {
+  text-align: center;
+  color: var(--main-text);
+}
+
+.code-example p {
+  font-style: italic;
+}
+
+.code-example b {
+  font-style: normal;
+}
+
+.code-example pre {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: left;
+  font-size: 15px;
+  background: var(--accent);
+  color: var(--pure-white);
+  border-radius: 8px;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text);
+}
+
+.languages ul {
+  padding: 5px;
+}
+
+.languages li {
+  list-style: none;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--pure-white);
+  background: var(--center-contents-bottom);
+}
+
+.education ul {
+  padding: 5px;
+  margin: 0;
+}
+
+.education li {
+  list-style: none;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--main-text);
+}
